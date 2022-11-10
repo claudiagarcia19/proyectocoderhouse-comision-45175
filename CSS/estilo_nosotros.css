@@ -1,0 +1,102 @@
+*{ margin: 0;
+  padding: 0;
+ 
+}
+header {
+  background-color: gainsboro;
+  width: 100%;
+  height: auto;
+  align-self: start;
+}
+
+header {
+  min-height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  height: 75px;
+  margin-right: 10px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  list-style-type: none;
+  display: flex;
+  padding-left: 20px;
+}
+li a {
+  margin-right: 20px;
+  font-size: 22px;
+}
+nav a {
+  font-weight: 600;
+  padding: 10px;
+  
+}
+.main {
+ /* background-color: grey;*/
+  width: 100%;
+  height: 80vh;
+  border: 9px solid pink;
+  background-image: url(../imagenes/facturas_expo.jpg);
+  
+}
+.articulo {
+  border: 3px solid pink;
+  background-image: url(../imagenes/harina.webp);
+  font-style: oblique;
+}
+.articulo p {
+   color: black;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 5fr 5fr 5fr;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer > p {
+  background-color: gainsboro;
+  font-size: medium;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    padding: 10px 0px;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer > p {
+  background-color: gainsboro;
+  font-size: medium;
+}

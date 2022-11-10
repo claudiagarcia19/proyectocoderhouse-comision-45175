@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: gainsboro;
+  width: 100%;
+  height: auto;
+  align-self: start;
+}
+header {
+  min-height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  height: 75px;
+  margin-right: 10px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  list-style-type: none;
+}
+nav a {
+  font-weight: 600;
+  padding: 10px;
+  font-size: 22px;
+}
+body {
+  background-image: url(../imagenes/torta_deco.webp);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: monospace;
+}
+
+form {
+  width: 450px;
+  margin: auto;
+  background: rgba (0, 0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+h2 {
+  color: rgb(68, 4, 4);
+  text-align: left;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+  background-color: gainsboro;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+#boton {
+  background-color: gainsboro;
+  color: violet;
+  padding: 30px;
+}
+#boton:hover {
+  cursor: pointer;
+  font-size: 30px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer > p {
+  background-color: gainsboro;
+  font-size: medium;
+}
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    padding: 10px 0px;
+  }
+}
